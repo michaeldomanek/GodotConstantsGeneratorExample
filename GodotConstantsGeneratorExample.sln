@@ -1,0 +1,27 @@
+﻿Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GodotConstantsGeneratorExample", "GodotConstantsGeneratorExample.csproj", "{A8BC85DD-8554-45B3-AE7D-C08FEC771234}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GodotConstantsGenerator", "GodotConstantsGenerator\GodotConstantsGenerator.csproj", "{B62B1FB1-FBA8-46B3-A9A2-A1BEE07EB634}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+	Debug|Any CPU = Debug|Any CPU
+	ExportDebug|Any CPU = ExportDebug|Any CPU
+	ExportRelease|Any CPU = ExportRelease|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A8BC85DD-8554-45B3-AE7D-C08FEC771234}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8BC85DD-8554-45B3-AE7D-C08FEC771234}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8BC85DD-8554-45B3-AE7D-C08FEC771234}.ExportDebug|Any CPU.ActiveCfg = ExportDebug|Any CPU
+		{A8BC85DD-8554-45B3-AE7D-C08FEC771234}.ExportDebug|Any CPU.Build.0 = ExportDebug|Any CPU
+		{A8BC85DD-8554-45B3-AE7D-C08FEC771234}.ExportRelease|Any CPU.ActiveCfg = ExportRelease|Any CPU
+		{A8BC85DD-8554-45B3-AE7D-C08FEC771234}.ExportRelease|Any CPU.Build.0 = ExportRelease|Any CPU
+		{B62B1FB1-FBA8-46B3-A9A2-A1BEE07EB634}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B62B1FB1-FBA8-46B3-A9A2-A1BEE07EB634}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B62B1FB1-FBA8-46B3-A9A2-A1BEE07EB634}.ExportDebug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B62B1FB1-FBA8-46B3-A9A2-A1BEE07EB634}.ExportDebug|Any CPU.Build.0 = Debug|Any CPU
+		{B62B1FB1-FBA8-46B3-A9A2-A1BEE07EB634}.ExportRelease|Any CPU.ActiveCfg = Debug|Any CPU
+		{B62B1FB1-FBA8-46B3-A9A2-A1BEE07EB634}.ExportRelease|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+EndGlobal
