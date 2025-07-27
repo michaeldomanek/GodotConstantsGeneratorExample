@@ -29,13 +29,6 @@ watchexec -w project.godot -- godot-constants-generator
 
 Install `watchexec`: https://github.com/watchexec/watchexec
 
-### JetBrains Rider
-
-This project also includes Rider run configurations for both commands:  
-`.run/GodotConstantsGenerator.run.xml`\
-`.run/Watchexec project.godot.run.xml`
-
-
 ## Example usage in your C# scripts:
 
 Example of using the input action constants:
