@@ -1,10 +1,40 @@
-# Godot Constants Generator
+# Godot Constants Generator Example
 
-This tool automatically extracts input actions, collision layers, and group names from `project.godot` and generates strongly-typed C# constants:
+Example for the [GodotConstantsGenerator](https://github.com/michaeldomanek/GodotConstantsGenerator). \
+The tool automatically extracts input actions, collision layers, and group names from `project.godot` and generates strongly-typed C# constants:
 
 - `Actions.cs` → Input actions
 - `CollisionLayers.cs` → named collision layers
 - `Groups.cs` → Global group names
+
+## Installation
+
+```bash
+dotnet tool install --global GodotConstantsGenerator
+```
+
+## Usage
+Run this command from the project root:
+```bash
+godot-constants-generator [options]
+```
+
+### Automatic regeneration with watchexec
+
+Run this to automatically regenerate when `project.godot` changes:
+
+```bash
+watchexec -w project.godot -- godot-constants-generator
+```
+
+Install `watchexec`: https://github.com/watchexec/watchexec
+
+### JetBrains Rider
+
+This project also includes Rider run configurations for both commands:  
+`.run/GodotConstantsGenerator.run.xml`\
+`.run/Watchexec project.godot.run.xml`
+
 
 ## Example usage in your C# scripts:
 
@@ -29,48 +59,10 @@ public override void _Input(InputEvent @event) {
 You can view the example usage in the `scripts/ExampleUsage.cs` file and the generated code in `scripts/generated/...`.
 
 ## Requirements:
-- Godot Mono 4.4 (should work on all Godot 4.x versions)
+- Godot Mono 4.x (tested on Godot 4.4.1)
 - .NET 8 SDK
 
 
-## Usage
-
-### One-time generation
-
-Run this command from the project root:
-
-```bash
-dotnet run --project GodotConstantsGenerator
-```
-
-### Automatic regeneration with watchexec
-
-Run this to automatically regenerate when `project.godot` changes:
-
-```bash
-watchexec -w project.godot -- dotnet run --project GodotConstantsGenerator
-```
-
-Install `watchexec`: https://github.com/watchexec/watchexec
-
-### JetBrains Rider
-
-This project also includes Rider run configurations for both commands:  
-`.run/GodotConstantsGenerator.run.xml`\
-`.run/Watchexec project.godot.run.xml`
-
-
-## Include in your project
-
-- add the `GodotConstantsGenerator` project to your solution as a submodule and reference it in your main project
-- add this to your main .csproj to ignore the folder in the IDE
-```xml
-<ItemGroup>
-    <Compile Remove="GodotConstantsGenerator\**" />
-</ItemGroup>
-```
-- update the output namespace in `GodotConstantsGenerator/Program.cs` to match your projects namespace
-- if necessary also update the other constants like generated file path
 ## Defining Constants in Godot
 
 The following editor features are used to define the constants in `project.godot` extracted by this tool:
