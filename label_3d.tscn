@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://brrtkvf5qd468"]
+
+[ext_resource type="Script" uid="uid://cw73qhpfqx5yo" path="res://ToolExample.cs" id="1_bjoq2"]
+
+[node name="Label3D" type="Label3D"]
+text = "ToolExample is working!"
+script = ExtResource("1_bjoq2")
